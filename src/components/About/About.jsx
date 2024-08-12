@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './About.css'
-import about_img from '../../assets/about-img.png'
+import about_img from '../../assets/About-img.png'
 import Pick_icon from '../../assets/Pick-icon.png'
 import service_icon from '../../assets/service-icon.png'
 import choices_icon from '../../assets/choices-icon.png'
