@@ -1,0 +1,94 @@
+
+.destination-title{
+    margin-inline: auto;
+}
+.destination-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.destination{
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 1.7rem;
+    border-radius: 10px;
+    border: 1px solid rgba(227,222,227,100%);
+    min-height: 70rem;
+    
+}
+
+.location-icon{
+    color: var(--orange-color);
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color:#FFFCFF ;
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    z-index: 2;
+    padding: 3rem 1.6rem;
+    width: 95%;
+    border: 1px solid rgba(227,222,227,100%);
+   border-radius: 10px;
+   box-shadow: 0px 5px 4px 8px rgba(242,237,242,50%);
+    
+}
+
+.booking-text{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+    /* text-align: left; */
+}
+
+
+/*=============================================
+=            meadia query            =
+=============================================*/
+
+@media (min-width: 576px) {
+    .booking{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-content: center;
+    }
+    .destination{
+        min-height: 50rem;
+    }
+}
+
+@media (min-width:992px){
+    .booking{
+        grid-template-columns: repeat(4,1fr);
+        top: 75%;
+    }
+    .destination{
+        min-height: 30rem;
+    }
+}
+
+@media (min-width:1200px){
+    .destination p{
+        width: 60%;
+        margin-inline: auto;
+    }
+  }
+

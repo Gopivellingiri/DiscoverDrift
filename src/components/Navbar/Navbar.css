@@ -1,0 +1,75 @@
+
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 100;
+    
+}
+nav{
+    padding-block: 2rem;
+}
+header.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+.nav-group {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+.nav-group .nav-link{
+    display: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+     gap: .8rem;
+    color: var(--orange-color);
+    background-color: var( --light-color);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 20px;
+    font-size: var(--fontSize-4);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+.nav-link .navigation {
+    color: var(--orange-color);
+    display: none; 
+}
+
+.nav-link.show .navigation,
+.nav-link.show span {
+    display: block; 
+    color: var(--light-color);
+}
+
+.nav-link.show {
+    background-color: var(--orange-color);
+    color:var(--light-color);
+    width: 10rem; 
+}
+.nav-group .nav-link:hover{
+    background-color: var(--orange-color);
+    color: var(--light-color);
+}
+
+
+
+/*=============================================
+=            media query            =
+=============================================*/
+
+@media (min-width: 576px) {
+    
+}
+
+
